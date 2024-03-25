@@ -50,21 +50,15 @@ class ImgDDLabel(QtWidgets.QLabel):
             self.setPixmap(image_path)
         except Exception as ex:print(ex)
 
-__name__ == "__main__":
-import sys
-print('running')
-try:
-    app = QtWidgets.QApplication(sys.argv)
-    ui = uic.loadUi('window.ui')
-    imgddlabel = ImgDDLabel()
-    ui.l1.addWidget(imgddlabel)
-    ui.show()
-    app.exec_()
-except Exception as ex:print(ex)
-print('running finished')
-
-
-
-
-
-                           
+if __name__ == "__main__":
+    import sys
+    print('running')
+    try:
+        app = QtWidgets.QApplication(sys.argv)
+        ui = uic.loadUi('window.ui')
+        imgddlabel = ImgDDLabel()
+        ui.l1.addWidget(imgddlabel)
+        ui.show()
+        app.exec_()
+    except Exception as ex:print(ex)
+    print('running finished')             

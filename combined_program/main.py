@@ -1,5 +1,5 @@
 # python3 -m install PyQt5 if necessary (in terminal)
-from PyQt6 import QtCore, QtWidgets, QtGui, uic
+from PyQt5 import QtCore, QtWidgets, QtGui, uic
 from sketcher import Sketcher, webcam
 from ImgDDLabel import ImgDDLabel
 

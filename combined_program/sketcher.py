@@ -1,4 +1,7 @@
-import cv2, numpy, time, traceback
+import cv2
+import numpy
+import time
+import traceback
 
 def webcam():
     stname = 'K.D. Sorokin Image-to-Sketch'

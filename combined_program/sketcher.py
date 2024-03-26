@@ -1,3 +1,4 @@
+# Sticking to the PEP 8—Python's style guide.
 import cv2
 import numpy
 import time

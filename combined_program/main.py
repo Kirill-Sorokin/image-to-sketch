@@ -1,7 +1,7 @@
 # python3 -m install PyQt5 if necessary (in terminal)
 from PyQt5 import QtCore, QtWidgets, QtGui, uic
-from sketcher import Sketcher, webcam
 from ImgDDLabel import ImgDDLabel
+from sketcher import Sketcher, webcam
 
 class ImageToSketch:
     def __init__(self):

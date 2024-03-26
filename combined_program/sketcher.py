@@ -16,7 +16,7 @@ def webcam():
             print(type(frame))
             Sketcher(frame=frame)
     video_capture.release()
-    cv2.destroyAllWindows()
+    # cv2.destroyAllWindows()
 
 def Sketcher(img = None, frame = None):
     try:
@@ -30,9 +30,11 @@ def Sketcher(img = None, frame = None):
             sketch = cv2.divide(grey_img, invertedblur, scale = 256.0)
             cv2.imshow("Sketch", sketch)
             while True:
+                # Press 'q' to 'Quit'.
                 if cv2.waitKey(1) == ord('q'):
                     cv2.destroyAllWindows()
                     break
+                # Press 's' to 'Save'.
                 elif cv2.waitKey(1) == ord('s'):
                     img = './Sketches/'+'sketch-'+time.strftime('%d-%m-%y-%H-%M-%S')+'.png'
                     cv2.imwrite(img, sketch)

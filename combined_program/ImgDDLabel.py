@@ -2,7 +2,7 @@ from PyQt5 import QtCore, QtWidgets, QtGui, uic
 
 class ImgDDLabel(QtWidgets.QLabel):
     def __init(self, lineedit = None):
-        super().__init()
+        super().__init__()
         self.setAcceptDrops(True)
         self.lineedit = lineedit
         self.imagefile = None

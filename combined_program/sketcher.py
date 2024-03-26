@@ -19,7 +19,7 @@ def webcam():
             print(type(frame))
             Sketcher(frame=frame)
     video_capture.release()
-    # cv2.destroyAllWindows()
+    cv2.destroyAllWindows()
 
 def Sketcher(img=None, frame=None):
     try:
